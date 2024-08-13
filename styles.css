@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: black;
+}
+
+/* Add your custom styles below */
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 3rem;
+    color: #fff;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav h1 {
+    font-size: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+nav .links a:hover {
+    color: #33c4ff;
+}
+
+/* main */
+
+.container {
+    color: #fff;
+    box-sizing: border-box;
+    width: 45%;
+}
+
+.intro h1 {
+    font-size: 5rem;
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+/* Links */
+.icon-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.icon-links a {
+    font-size: 2rem;
+    color: white;
+}
+
+.icon-links li:hover {
+    transform: scale(0.94);
+}
+
+.icon-links li {
+    transition: all 0.3s;
+}
+
+.icon-links a {
+    transition: all 0.3s;
+}
+
+.icon-links a:hover {
+    color: #cbcecf;
+
+}
+
+.i-links {
+    padding: 1.7rem 0;
+}
+
+
+/* Btn */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background-color: #33c4ff;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: #33a2ff;
+}
+
+.btn  {
+    font-weight: bold;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+
+/* Images */
+
+img {
+    width: 500px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #33c4ff;
+    box-shadow: 0px 0px 20px 10px #33c4ff;
+    box-sizing: border-box;
+
+}
+
+/* Section */
+
+.sec {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+/* Typed */
+
+#typed {
+    color: #33c4ff;
+}
+/* Utilities */
+.secondary-color {
+    color: #33c4ff;
+}
+
+
+@media (max-width: 1024px) {
+    .sec {
+        flex-direction: column-reverse;
+        padding: 1.2rem 0rem;
+    }
+
+    .img img {
+        position: relative;
+        bottom: 50px;
+        max-width: 350px;
+        margin: 20px 0;
+    }
+
+    .container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        gap: 1rem;
+    }
+}
